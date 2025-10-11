@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inscripción</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        fieldset {
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            color: #000;
+            background-color: #e9ddc4;
+            border: 1px solid #000;
+            padding: 3px 8px;
+        }
+
+        /* DATOS PERSONALES en dos columnas sin flex */
+        .personales div {
+            display: inline-block;
+            width: 48%;   
+        }
+
+        .personales label {
+            display: block;
+        }
+
+        /* FORMAS DE ACCESO */
+        .acceso .opciones-directo {
+            margin-left: 25px;
+        }
+
+        /* Colores */
+        .personales { background: #63594d; color: white; }
+        .acceso { background: #b18272; }
+        .documentos { background: #c2b291; }
+        .personaliza { background: #d6e4c3; }
+        .otros { background: #e4e3d1; }
+    </style>
+</head>
+<body>
+
+<h1>HOJA DE INSCRIPCIÓN <br>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+
+<form>
+    <!-- Datos personales -->
+    <fieldset class="personales">
+        <legend>Datos Personales</legend>
+
+        <div>
+            <label>Nombre (*):</label>
+            <input type="text" name="nombre" required>
+        </div>
+        <div>
+            <label>Apellidos (*):</label>
+            <input type="text" name="apellidos" required>
+        </div>
+
+        <div>
+            <label>DNI (*):</label>
+            <input type="text" name="dni" required>
+        </div>
+        <div>
+            <label>Fecha de Nacimiento:</label>
+            <input type="date" name="fecha_nacimiento">
+        </div>
+
+        <div>
+            <label>Localidad de Nacimiento:</label>
+            <input type="text" name="localidad">
+        </div>
+        <div>
+            <label>Provincia:</label>
+            <select name="provincia">
+                <optgroup label="Andalucía">
+                    <option>Huelva</option>
+                    <option>Sevilla</option>
+                    <option>Cádiz</option>
+                    <option>Córdoba</option>
+                    <option>Jaén</option>
+                    <option>Granada</option>
+                    <option>Málaga</option>
+                    <option>Almería</option>
+                </optgroup>
+                <optgroup label="Castilla">
+                    <option>Ávila</option>
+                    <option>Burgos</option>
+                    <option>León</option>
+                    <option>Palencia</option>
+                    <option>Segovia</option>
+                    <option>Soria</option>
+                    <option>Salamanca</option>
+                    <option>Valladolid</option>
+                    <option>Zamora</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label>Dirección:</label>
+            <input type="text" name="direccion">
+        </div>
+        <div>
+            <label>Código Postal:</label>
+            <input type="text" name="cp" pattern="[0-9]{5}" maxlength="5">
+        </div>
+
+        <div>
+            <label>Email (*):</label>
+            <input type="email" name="email" pattern="^.+@.+\..+$" required>
+        </div>
+        <div>
+            <label>Teléfono (*):</label>
+            <input type="text" name="telefono" pattern="[0-9]{9}" required>
+        </div>
+
+        <div>
+            <label>Contraseña:</label>
+            <input type="password" name="password"  pattern="^(?=.*[A-Z])(?=.*[0-9]).{8,}$" required>
+        </div>
+    </fieldset>
+
+    <!-- Forma de acceso -->
+    <fieldset class="acceso">
+        <legend>Forma de Acceso</legend>
+        <label><input type="radio" name="acceso" value="Directo"> Directo</label><br>
+        <div class="opciones-directo">
+            <label><input type="radio" name="directo" value="Bachillerato"> Bachillerato Log Modalidad</label><br>
+            <label><input type="radio" name="directo" value="COU"> COU Opción</label><br>
+            <label><input type="radio" name="directo" value="FP2"> FP2</label><br>
+            <label><input type="radio" name="directo" value="Experimental"> Experimental</label><br>
+            <label><input type="radio" name="directo" value="Otros"> Otros (especifique)</label>
+            <input type="text" name="otros"><br>
+        </div>
+        <label><input type="radio" name="acceso" value="Prueba Libre"> Prueba Libre</label><br>
+    </fieldset>
+
+    <!-- Documentos adjuntos -->
+    <fieldset class="documentos">
+        <legend>Documentos Adjuntos</legend>
+        <label><input type="checkbox" name="dni"> Fotocopia DNI</label><br>
+        <label><input type="checkbox" name="certificado"> Certificado Académico</label><br>
+        <label><input type="checkbox" name="otrosdocs"> Otros documentos(especifique):</label>
+        <input type="text" name="otrosArc"><br>
+        <label>Adjuntar documentos(puedes subir más de un documento):</label>
+        <input type="file" name="archivos" multiple>
+    </fieldset>
+
+    <!-- Personaliza -->
+    <fieldset class="personaliza">
+        <legend>Personaliza</legend>
+        <label>Código Identificación:</label>
+        <input type="text" name="codigo" pattern="[A-Za-z]{2}-[0-9]{4}"><br>
+        <label>Grupo del curso:</label>
+        <input type="text" name="grupo" pattern="A|B|AA|BB|ABA"><br>
+        <label>Idioma Certificado:</label>
+        <select name="idioma">
+            <option>Inglés</option>
+            <option>Francés</option>
+            <option>Alemán</option>
+            <option>Portugués</option>
+            <option>Italiano</option>
+            <option>Japonés</option>
+        </select><br>
+        <label>Certificación en idiomas:</label>
+        <input type="text" name="cert_idioma" pattern="A1|A2|B1|B2|C1|C2">
+    </fieldset>
+
+    <!-- Otros datos -->
+    <fieldset class="otros">
+        <legend>Otros datos</legend>
+        <label>Indique cualquier otra cosa a tener en cuenta:</label><br>
+        <textarea name="comentarios" rows="4" cols="40" placeholder="Déjanos tu comentario"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Enviar Solicitud">
+    <input type="reset" value="Resetear">
+</form>
+
+</body>
+</html>
