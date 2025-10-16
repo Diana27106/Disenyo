@@ -1,0 +1,26 @@
+
+.nombre{
+    background-color: rgba(47, 255, 82, 0.452);
+}
+
+.edad{
+    background-color: rgba(255, 0, 0, 0.548);
+}
+
+.nombre:hover{
+    background-color: rgba(250, 235, 215, 0.699);
+    cursor: pointer;
+}
+
+.nombre:focus{
+    background-color: rgba(0, 255, 255, 0.521);
+}
+
+input[type="radio"]:checked + label {
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: yellow;
+    font-weight: bold;
+}

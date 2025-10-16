@@ -1,0 +1,17 @@
+section {
+    counter-reset: parte;
+}
+
+h2::before{
+    counter-increment: parte;
+    content: "Parte " counter(parte) " - ";
+}
+
+h2{
+    counter-reset: sub;
+}
+
+h3::before{
+    counter-increment: sub;
+    content: counters(parte, ".") "." counter(sub) ") " ;
+}

@@ -1,0 +1,45 @@
+@counter-style estrellas {
+    system: symbolic;
+    symbols: "★" "☆";
+    suffix: " ";
+}
+h1{
+    color: darkblue;
+    border-bottom: solid 2px darkblue ;
+}
+
+body {
+    counter-reset: cap 2;
+}
+
+h2::before{
+    counter-increment: cap;
+    content: "Capítulo " counter(cap) " - ";
+    color: darkblue;
+}
+
+h2{
+    counter-reset: sub;
+    color: blue;
+}
+
+h3::before{
+    counter-increment: sub;
+    content:  counters(cap, ".") "." counter(sub, lower-alpha) " -> " ;
+    color: gray;
+}
+
+h3{
+    margin-left: 2em;
+    counter-reset: subsub;
+}
+
+h4::before{
+    counter-increment: subsub;
+    content:  counter(subsub, estrellas);
+    color: gray;
+}
+
+h4{
+    margin-left: 4em;
+}

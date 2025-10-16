@@ -1,0 +1,16 @@
+body {counter-reset: unidad;}
+
+h2::before{
+    counter-increment: unidad;
+    content: "Unidad " counter(unidad, upper-roman) ": ";
+    color: blue;
+}
+
+section{
+    counter-reset: letra;
+}
+
+h3::before{
+    counter-increment: letra;
+    content: "Unidad " counter(letra, lower-alpha) ": ";
+}

@@ -1,0 +1,19 @@
+.enlaces a {
+    color: #000; 
+    text-decoration: none;
+}
+
+.enlaces a:visited {
+    color: green; 
+}
+
+#punto1:target h3,
+#punto2:target h3 {
+    color: green; 
+}
+
+#punto1:target h3::before,
+#punto2:target h3::before {
+    content: '>'; 
+    color: green; 
+}

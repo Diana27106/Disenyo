@@ -1,0 +1,90 @@
+p:first-of-type{
+    border: solid 4px blue;
+}
+
+p:nth-child(3){
+    border: dotted 4px green;
+}
+
+p:nth-child(4){
+    border: dashed 4px purple;
+}
+
+p:last-of-type{
+    border: double 4px red;
+    border-top: double 4px orange;
+}
+
+
+.forma-azul{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px; 
+    background-color: blue;
+    border-radius: 15px 15px 0 0; 
+}
+
+.forma-verde {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: green;
+    border-radius: 0 0 40% 40%; 
+}
+
+/* 3. Círculo Morado */
+.forma-morada {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px; 
+    background-color: purple;
+    border-radius: 50%;
+}
+
+.forma {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 15px; 
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #333333; 
+    height: 45px; 
+    box-sizing: border-box;
+}
+
+.A {
+    width: 150px;
+    border-radius: 0 0 40px 0;
+}
+
+.B {
+    width: 150px;
+    border-radius: 0 0 40% 0; 
+}
+
+.C {
+    width: 150px;
+    border-radius: 0 0 30px 0;
+}
+
+.D {
+    width: 150px;
+    height: 60px; 
+    border-radius: 20px 70px;
+}
+
+.E {
+    width: 150px;
+    border-radius: 10% 5% 10% 10%; 
+}
+
+.F {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+

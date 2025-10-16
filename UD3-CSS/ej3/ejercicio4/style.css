@@ -1,0 +1,19 @@
+main {
+    counter-reset: cap;
+}
+
+h2::before{
+    counter-increment: cap;
+    content: "Capítulo " counter(cap) ": ";
+    color: blue;
+}
+
+h2{
+    counter-reset: sub;
+}
+
+h3::after{
+    counter-increment: sub;
+    content: " - Subsección " counters(cap, ".") "." counter(sub) ;
+    color: green;
+}

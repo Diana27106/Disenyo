@@ -1,0 +1,32 @@
+body {counter-reset: cap;}
+h1{
+    color: blue;
+    text-align: center;
+}
+
+h2::before{
+    counter-increment: cap;
+    content: "Capítulo " counters(cap, ".") ". ";
+    color: blue;
+}
+
+h2{
+    color: blue;
+}
+h2{
+    counter-reset: subcapitulo;
+}
+
+h3::before{
+    counter-increment: subcapitulo;
+    content: counters(cap, ".") "." counter(subcapitulo) "-- ";
+}
+
+h3{
+    counter-reset: subsub;
+}
+
+h4::before{
+    counter-increment: subsub;
+    content: counters(cap, ".") "." counters(subcapitulo, ".") "." counter(subsub) "-- ";
+}
