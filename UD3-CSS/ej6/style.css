@@ -1,3 +1,49 @@
-p{
+p:first-of-type,
+p:nth-of-type(2){
+    border: 1px solid black;
+    padding: 20px;
+    width: 350px;
+    background-color: antiquewhite;
     font-family: "Dancing Script", cursive;
+}
+
+p:nth-of-type(2){
+    white-space: nowrap;
+    overflow: hidden;          
+    text-overflow: ellipsis; 
+}
+
+p:nth-of-type(3){
+    text-indent: 20px;    
+    text-align: justify;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    align-items: center;
+}
+
+p:nth-of-type(4),
+p:nth-of-type(5){
+    font-family: "Bungee Shade", sans-serif;
+}
+
+input {
+    padding: 10px 20px;
+    color: white;
+    background-color: orange;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;                 
+    transition: background-color 0.3s ease-in;
+}
+
+input:hover {
+    background-color: orangered;     
+}
+
+input:active {
+    background-color: salmon;
 }
