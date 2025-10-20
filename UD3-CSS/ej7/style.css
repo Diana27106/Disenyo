@@ -1,0 +1,111 @@
+
+.contenedor1{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin: 20px auto;
+    border:5px red dashed;
+}
+
+
+.contenedor2{
+    width: 300px;
+    height: 300px;
+    background-image: url(/UD3-CSS/ej7/assets/puesta-sol.jpg);
+    margin: 20px auto;
+    border:5px red dashed;
+}
+
+.contenedor3{
+    width: 300px;
+    height: 300px;
+    background-image: url(/UD3-CSS/ej7/assets/puesta-sol.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    margin: 20px auto;
+    border:5px red dashed;
+}
+
+.contenedor4{
+    width: 300px;
+    height: 300px;
+    background-image: url(/UD3-CSS/ej7/assets/puesta-sol.jpg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+    border:5px red dashed;
+}
+
+.contenedor5{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    background-image: url(/UD3-CSS/ej7/assets/puesta-sol.jpg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin: 20px auto;
+    border:5px red dashed;
+}
+
+.contenedor6{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-image: url(/UD3-CSS/ej7/assets/puesta-sol.jpg);
+    background-clip: content-box;
+    background-size: cover;
+    margin: 20px auto;
+    border:5px red dashed;
+}
+
+.contenedor7 {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: aqua;
+    background-image: url(/UD3-CSS/ej7/assets/puesta-sol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box; 
+    margin: 20px auto;
+    border: 5px red dashed;
+}
+
+
+
+.contenedor8{
+    width: 90%;
+    height: 300px;
+    background-image: url(/UD3-CSS/ej7/assets/puesta-sol.jpg);
+    background-size:cover;
+    background-clip: border-box;
+    background-clip: border-box;
+    margin: 20px auto;
+    background-attachment: fixed;
+    border:5px red dashed;
+}
+
+.contenedor9 {
+    width: 750px;
+    height: 300px;
+    padding: 10px;
+    background-image: url(/UD3-CSS/ej7/assets/favicon.png), url(/UD3-CSS/ej7/assets/puesta-sol.jpg);
+    background-repeat: repeat-x, no-repeat;
+    background-size: 10% 25%, cover;         
+    background-position: top, center;  
+    margin: 20px auto;
+    border: 5px red dashed;
+}
+
+
+.contenedor10 {
+    width: 1250px;
+    height: 750px;
+    margin: 20px auto;
+    border: 5px red dashed;
+    background-image: url(/UD3-CSS/ej7/assets/arbol.png), url(/UD3-CSS/ej7/assets/aves.png),  url(/UD3-CSS/ej7/assets/cielo.png);   
+    background-size: cover, 100% 50%, cover;
+    background-position: center, bottom, top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
