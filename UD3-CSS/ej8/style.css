@@ -1,0 +1,192 @@
+.caja1 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: -5px -5px red;
+}
+
+.caja2 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: -5px -5px 5px blue;
+}
+
+.caja3 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: 0px -5px green, -5px 0px green, -5px -5px green;
+}
+
+.caja4 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: 0px -5px 5px blue, -5px 0px 5px blue, -5px -5px 5px blue;
+}
+
+.caja5 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: 0px 0px 7px pink;
+}
+
+.caja6 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: 0px 0px 10px yellow;
+}
+
+.caja7 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: inset -5px -5px purple;
+}
+
+.caja8 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: inset -5px -5px 5px aqua;
+}
+
+.caja9 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: inset -7px -7px pink;
+}
+
+.caja10 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: inset -7px -7px 5px green, inset 0 0 2px green;
+}
+
+.caja11 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: inset 0 0 5px purple;
+}
+
+.caja12 {
+  margin: 30px;
+  height: 65px;
+  width: 130px;
+  background-color: #ddd;
+  display: inline-block;
+  box-shadow: inset 0 0 7px black;
+}
+
+.efecto1 {
+  width: 450px;
+  border: 2px solid black;
+  font-size: 50px;
+  color: blue;
+  padding: 20px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.efecto2 {
+  width: 450px;
+  border: 2px solid black;
+  font-size: 50px;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.efecto3 {
+  width: 450px;
+  border: 2px solid black;
+  font-size: 50px;
+  background-color: #bbb;
+  color: #bbb;
+  padding: 20px;
+  text-shadow: -1px -1px white, 1px 1px #999;
+}
+
+.efecto4 {
+  width: 450px;
+  border: 2px solid black;
+  font-size: 50px;
+  background-color: #bbb;
+  color: #bbb;
+  padding: 20px;
+  text-shadow: 1px 1px white, -1px -1px #999;
+}
+
+.efecto5 {
+  width: 450px;
+  border: 2px solid black;
+  font-size: 50px;
+  background-color: blue;
+  color: blue;
+  padding: 20px;
+  text-shadow: 1px 0px black, -1px 0px black, 0px 1px black, 0px -1px black;
+}
+
+.efecto6 {
+  width: 450px;
+  border: 2px solid black;
+  font-size: 50px;
+  color: black;
+  padding: 20px;
+  text-shadow: 0px 0px 14px salmon;
+}
+
+.efecto7 {
+  width: 450px;
+  border: 2px solid black;
+  font-size: 50px;
+  color: black;
+  padding: 20px;
+  text-shadow: 0px 0px 14px purple, 0px 0px 5px blue;
+}
+
+.efecto8 {
+  width: 450px;
+  border: 2px solid black;
+  font-size: 50px;
+  color: #ddd;
+  padding: 20px;
+  text-shadow: 1px 1px purple, 2px 2px aqua, 3px 3px purple, 4px 4px aqua;
+}
+
+.efecto9 {
+  width: 450px;
+  border: 2px solid black;
+  font-size: 50px;
+  color: #666;
+  padding: 20px;
+  text-shadow: 1px -1px 5px yellow, 5px -5px 10px #f80, -2px -9px 10px red;
+}
