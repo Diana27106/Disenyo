@@ -1,0 +1,98 @@
+h1 {
+    background: linear-gradient(#60A, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.caja1 {
+    margin: 20px;
+    width: 700px;
+    height: 150px;
+    background: linear-gradient(to right, black, blue, yellow, green, red);
+}
+
+.caja2 {
+    margin: 20px;
+    width: 700px;
+    height: 150px;
+    background: linear-gradient(blue 0% 10%, yellow 10% 20%, red 20% 30%, blue 30% 40%, yellow 40% 50%, red 50% 60%, blue 60% 70%, yellow 70% 80%, red 80% 90%, blue 90% 100%);
+}
+
+.caja3 {
+    margin: 20px;
+    width: 500px;
+    height: 250px;
+    background: radial-gradient(yellow, red, black);
+}
+
+.caja4 {
+    margin: 20px;
+    width: 500px;
+    height: 250px;
+    background: radial-gradient(yellow 40%, red 50%, black 70%)
+}
+
+.caja5 {
+    margin: 20px;
+    width: 500px;
+    height: 250px;
+    background: radial-gradient(circle 350px at center, yellow 40%, red 50%, black 70%)
+}
+
+.caja6 {
+    margin: 20px;
+    width: 500px;
+    height: 250px;
+    background: radial-gradient(circle 500px at center left, yellow 40%, red 50%, black 70%)
+}
+
+.caja7 {
+    margin: 20px;
+    width: 700px;
+    height: 150px;
+    background: radial-gradient(circle 300px at center, rgb(77, 0, 170), rgb(255, 42, 0), yellow)
+}
+
+.caja8 {
+    margin: 20px;
+    width: 700px;
+    height: 150px;
+    background: radial-gradient(ellipse 300px 170px at center, rgb(77, 0, 170), rgb(255, 42, 0), yellow)
+}
+
+.caja9 {
+    margin: 20px;
+    width: 700px;
+    height: 150px;
+    background: radial-gradient(circle 400px at center, rgb(77, 0, 170), rgb(255, 42, 0), yellow)
+}
+
+.caja10 {
+    margin: 20px;
+    width: 500px;
+    height: 350px;
+    background: repeating-radial-gradient(circle at center,
+            salmon 0px,
+            salmon 20px,
+            red 20px,
+            red 40px,
+            darkred 40px,
+            darkred 60px);
+}
+
+.caja11 {
+    margin: 20px;
+    width: 500px;
+    height: 350px;
+    background: conic-gradient(at top center, blue, black);
+}
+
+.caja12 {
+    width: 300px;
+    height: 300px;
+    background: repeating-conic-gradient(from 0deg,
+            blue 0deg,
+            yellow 36deg,
+            orange 72deg);
+    ;
+}
