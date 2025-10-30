@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #555;
+}
+
+nav li {
+    padding: 10px;
+    display: inline-block;
+    color: white;
+}
+
+nav li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
