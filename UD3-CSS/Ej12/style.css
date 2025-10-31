@@ -1,0 +1,186 @@
+/* ESTILOS GENERALES */
+* {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BARRA DE NAVEGACIÓN  */
+nav {
+    background-color: #ddd;
+    width: 100%;
+    height: 80px;
+    padding: 0 16px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 2px gray;
+    z-index: 1;
+}
+
+/* Logo o imagen en la barra */
+nav img {
+    float: right;
+    height: 80px;
+    margin: 0 4px;
+    display: block;
+    border: 2px solid green;
+}
+
+/* PRIMER NIVEL (MENÚ PRINCIPAL) */
+nav>ul {
+    float: left;
+    list-style: none;
+    margin: 20px auto;
+}
+
+nav>ul>li {
+    display: inline-block;
+    position: relative;
+    margin-right: 18px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px 14px;
+    font-size: 18px;
+}
+
+/* Estilo del primer ítem */
+nav>ul>li:first-of-type>a {
+    background-color: orangered;
+    color: white;
+}
+
+/* Hover en primer nivel */
+nav>ul>li:hover>a {
+    background: royalblue;
+    color: black;
+}
+
+/* SEGUNDO NIVEL (SUBMENÚS) */
+nav ul ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    min-width: 200px;
+    background: #45f15f;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mostrar submenú al pasar el ratón */
+nav ul li:hover>ul {
+    display: block;
+}
+
+/* Items dentro de submenús */
+nav ul ul li {
+    display: block;
+    margin: 0;
+}
+
+/* Enlaces dentro de submenús */
+nav ul ul li a {
+    display: block;
+    padding: 8px 10px;
+    text-transform: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+/* Hover en items de submenú */
+nav ul ul li:hover {
+    background: royalblue;
+}
+
+/* TERCER NIVEL (SUB-SUBMENÚS) */
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 200px;
+    background: #45f15f;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces en sub-submenús */
+nav ul ul ul li a {
+    text-transform: uppercase;
+}
+
+/* CUARTO NIVEL (SUB-SUBMENÚS) */
+
+nav ul ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 200px;
+    background: #45f15f;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces dentro del cuarto nivel */
+nav ul ul ul ul li a {
+    display: block;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+/* Hover en items del último nivel */
+nav ul ul ul ul li:hover {
+    background: royalblue;
+}
+
+header {
+    margin-top: 200px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../../UD2-Analisis/Prototipo/prototipo-vacacional/img/vista-montana-2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+
+/* Centramos verticalmente el contenido sin usar flex */
+header .contenido-header {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 150px;
+    display: block;
+}
+
+/* Texto */
+header h1,
+header h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Botón */
+header button {
+    background-color: orangered;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
