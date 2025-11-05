@@ -1,0 +1,106 @@
+/* Variables para colores */
+:root {
+  --primary-blue: #143d64;
+  --secondary-blue: #6c63ff;
+  --light-bg: #f2f2f2;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+/* --- Header y Navegación --- */
+.header {
+  background-color: var(--primary-blue);
+  padding: 10px 0;
+}
+
+.nav {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+/* --- Sección Hero --- */
+.hero {
+  margin: 80px auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 25%;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--secondary-blue);
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #4a33cc;
+}
+
+/* --- Ilustración--- */
+.hero-illustration {
+  max-width: 45%;
+}
+
+.hero-illustration img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
