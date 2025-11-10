@@ -9,6 +9,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "fajala";
+    src: url(recursos/fonts/FjallaOne-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "icon";
+    src: url(recursos/fonts/websymbols-regular-webfont.eot) format("embedded-opentype"),
+        url(recursos/fonts/websymbols-regular-webfont.svg) format("svg"),
+        url(recursos/fonts/websymbols-regular-webfont.ttf) format("truetype"),
+        url(recursos/fonts/websymbols-regular-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*ESTILOS GENERALES*/
 * {
@@ -90,7 +106,7 @@ body {
 }
 
 #nav>ul>li>a:first-child {
-    border-left: 1px solid gray
+    border-left: 1px solid gray;
 }
 
 #nav>ul>li:hover {
@@ -139,7 +155,8 @@ body {
 
 /*BARRA LATERAL*/
 
-#aside {
+#aside,
+#frase {
     width: 200px;
     float: left;
     margin: 30px;
@@ -148,14 +165,21 @@ body {
     box-shadow: 0px 2px 2px #ccc;
 }
 
+#frase {
+    /* clear: both; */
+    width: 200px;
+    padding: 10px;
+    font-size: 14px;
+}
+
 #aside .widget {
     display: block;
     width: 180px;
-    /* margin: 5px auto; */
+    margin: 5px auto;
     padding: 8px 10px;
     font-size: 14px;
     border-bottom: 1px dashed #333;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #aside .widget:last-child {
@@ -163,7 +187,8 @@ body {
 }
 
 #aside .widget h3 {
-    width: 180px;
+    display: block;
+    width: 100%;
     color: #333;
     text-align: center;
     padding-top: 2px;
@@ -189,7 +214,6 @@ input[type="password"]:focus {
     color: black;
     border-radius: 2px;
 }
-
 
 input[type="submit"] {
     display: block;
@@ -217,5 +241,128 @@ input[type="submit"]:active {
 #aside div a {
     display: block;
     width: 95%;
-    margin: 3px 0;
+    margin: 3px 3px;
+}
+
+#aside input,
+#aside label {
+    margin: 0px auto;
+    text-align: center;
+}
+
+#aside div input[type="submit"] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #529125;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #529125;
+}
+
+a:hover {
+    color: #285616;
+}
+
+#aside li {
+    list-style: square;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.red {
+    color: #9b2422 !important;
+}
+
+.blue {
+    color: blue !important;
+}
+
+.orange {
+    color: orange;
+}
+
+#sections {
+    float: right;
+    width: 75%;
+    font-family: sans-serif;
+    margin-right: 20px;
+
+}
+
+#sections .titulo {
+    font-family: "fajala";
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#sections section {
+
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    font-size: 16px;
+    position: relative;
+}
+
+#sections .article {
+    margin: 20px 10px;
+}
+
+#sections .date {
+    color: gray;
+    font-size: 14px;
+}
+
+#sections .stickerOne,
+#sections .stickerTwo {
+    position: absolute;
+    margin-top: -38px;
+}
+
+#sections .stickerTwo {
+    left: 880px;
+}
+
+.icon {
+    font-family: "icon";
+    margin-right: 5px;
+    color: black;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.history {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
 }
