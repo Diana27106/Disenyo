@@ -1,0 +1,426 @@
+/* Estilos Generales */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    /* Colores */
+    --primary-color: #008000;
+    --primary-hover-color: #006400;
+    --feature-icon-color: #13a3db;
+    --staff-icon-color: #107ba7;
+    --secondary-button-color: #37b81e;
+    --secondary-hover-color: #358d24;
+    --bg-light: #f6f6f6;
+    --bg-footer: #2c2a2a;
+    --font-color-footer: #c0bcbc;
+    --box-shadow: 0 0 5px rgba(204, 201, 201, 0.5);
+    --gradient-header: linear-gradient(to left top, rgba(55, 185, 30, 0.83), rgba(25, 59, 240, 0.83));
+    --gradient-contact: linear-gradient(to left top, rgba(16, 123, 167, 0.8), rgba(16, 123, 167, 0.8));
+    --font-family-title: Arial, Tahoma, Verdana, sans-serif;
+    --font-family-primary: "Open Sans", sans-serif;
+    --base-font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    line-height: 1.6;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Cabecera (Header) --- */
+
+header {
+    min-height: 100vh;
+    padding: 20px 0;
+    background: var(--gradient-header), url(./assets/fondo_superior.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+header img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+
+.social p {
+    color: #fff;
+}
+
+.social p a {
+    margin-right: 5px;
+}
+
+.header__info {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__content {
+    padding: 20px 0;
+    width: 60%;
+}
+
+.header__content h1 {
+    font-family: var(--font-family-title);
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.header__content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.header__content ul li {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: justify;
+    display: flex;
+    align-items: flex-start;
+}
+
+.header__content ul li i {
+    color: var(--primary-color);
+    margin-right: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    background-color: #fff;
+    min-width: 23px;
+    min-height: 23px;
+    line-height: 23px;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0;
+}
+
+/* Formulario */
+.header__form-box {
+    background-color: rgba(25, 25, 25, 0.8);
+    width: 35%;
+    padding: 30px;
+    color: #fff;
+}
+
+.header__form-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.header__form-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__form-box form label {
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.header__form-box form input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-family: var(--font-family-primary);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 500px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.header__form-box small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.header__form-box small:last-of-type {
+    margin-top: 5px;
+}
+
+.header__form-box small a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* --- Sección 2: Características --- */
+
+.section2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+.section2__card {
+    width: 22%;
+    height: auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2__card i {
+    font-size: 2.5rem;
+    color: var(--feature-icon-color);
+    border: 2px solid var(--feature-icon-color);
+    border-radius: 50%;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    line-height: 98px;
+    margin: 30px 0 15px 0;
+    text-align: center;
+}
+
+.section2__card p {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* --- Sección 3: Contenido y Video --- */
+
+.section3 {
+    padding: 40px 0;
+    background-color: var(--bg-light);
+}
+
+.section3__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section3__video {
+    width: 40%;
+}
+
+.section3__content {
+    width: 55%;
+}
+
+.section3__video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: var(--box-shadow);
+}
+
+.section3__content h2,
+.section3__content p {
+    margin-bottom: 20px;
+}
+
+.section3__content p {
+    font-size: 1rem;
+}
+
+/* --- Equipo (Staff) --- */
+
+.equipo h2 {
+    text-align: center;
+    margin: 50px 0 40px 0;
+}
+
+.staff {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.persona {
+    width: 22%;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.persona img {
+    width: 100%;
+    height: auto;
+}
+
+.persona h3 {
+    margin: 15px 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.persona p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contacto {
+    margin: 10px 0 20px 0;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: var(--staff-icon-color);
+    font-size: 1.5rem;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+
+/* --- Sección Contacto Final --- */
+
+.sectionContacto {
+    background: var(--gradient-contact), url(./assets/fondo_inferior.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    min-height: 40vh;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.sectionContacto h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.sectionContacto p {
+    font-weight: 300;
+    padding: 20px 0;
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-button-color);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-hover-color);
+}
+
+
+/* --- Footer --- */
+
+footer {
+    background-color: var(--bg-footer);
+}
+
+footer .container {
+    padding: 30px 0;
+}
+
+footer .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    width: 65%;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    padding: 0 15px;
+}
+
+footer ul li a {
+    color: var(--font-color-footer);
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+footer p {
+    width: 30%;
+    color: var(--font-color-footer);
+    text-align: right;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
