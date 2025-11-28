@@ -19,6 +19,16 @@ h2 {
     font-weight: 100;
 }
 
+h2::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: red;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
 .seccion1 {
     width: 100%;
     display: grid;

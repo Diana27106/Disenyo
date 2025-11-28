@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main h1 {
+    margin: 20px 0;
+    font-size: 1.8rem;
+}
+
+.main h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: blueviolet;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+}
