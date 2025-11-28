@@ -1,0 +1,76 @@
+/* VARIABLES */
+:root {
+    --color-primary: #2658e4;
+
+}
+
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* TARJETA */
+.container {
+    display: grid;
+    grid-template-areas: "content";
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.imagen,
+.contenido {
+    grid-area: content;
+}
+
+.imagen {
+    width: 60%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.contenido {
+    background-color: var(--color-primary);
+    box-shadow: 0px 0px 5px 0px #000000;
+    position: absolute;
+    right: 0;
+    color: white;
+    padding: 20px;
+    width: 60%;
+    align-self: center;
+    justify-self: start;
+}
+
+.contenido h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: white;
+    color: var(--color-primary);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 0px 0px 5px 0px #000000;
+    transition: all 1s ease;
+}
