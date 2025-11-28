@@ -1,0 +1,57 @@
+/* ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* CONTENEDOR CALENDARIO */
+.calendario {
+    width: 700px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 1px solid #e0e0e0;
+}
+
+/*  ENCABEZADO MES */
+.mes {
+    grid-column: 1 / span 7;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #444;
+    border: 1px solid #e0e0e0;
+    padding: 20px 0 10px 0;
+}
+
+/* ENCABEZADO DIAS */
+.dias {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+/* CELDAS */
+.celda {
+    height: 90px;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    padding: 5px 8px;
+    font-size: 0.9em;
+    color: #333;
+    text-align: left;
+}
