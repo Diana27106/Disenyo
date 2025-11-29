@@ -4,21 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Presentation</title>
+    <title>Formulario de Contacto</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="contenedor">
-        <h1>Nos mantenemos en contacto</h1>
-        <div class="formulario">
-            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
-            <input type="email" name="email" id="email" placeholder="Ingresa tu email">
-            <textarea name="mensaje" id="mensaje" placeholder="Mensaje..."></textarea>
-            <button type="submit">Enviar ahora</button>
-        </div>
-        <img src="./assets/illustration.svg" alt="personas">
-    </section>
+    <div class="clip-path"></div>
+    <div class="contenedor-principal">
+        <section class="seccion-formulario">
+            <h1>Nos mantenemos en contacto</h1>
+
+            <form action="#" method="POST" class="formulario">
+                <div class="input-grupo">
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre:" required>
+                </div>
+
+                <div class="input-grupo">
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu email:" required>
+                </div>
+
+                <div class="input-grupo">
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje..." rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="boton-enviar">Enviar ahora</button>
+            </form>
+        </section>
+
+        <section class="seccion-ilustracion">
+            <img src="./assets/illustration.svg" alt="Ilustración de contacto">
+        </section>
+    </div>
 </body>
 
 </html>

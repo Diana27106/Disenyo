@@ -1,17 +1,113 @@
 /* VARIABLES */
 :root {
-    --color-primary: ##5050f0;
-
+    --color-principal: #5050f0;
 }
 
-/* ESTILOS GENERALES */
+/* Estilos Generales */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
     height: 100vh;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Seccion formulario */
+.seccion-formulario {
+    padding: 60px 50px;
+    height: 100%;
+}
+
+/* Seccion imagen */
+.seccion-ilustracion {
+    padding: 60px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.seccion-ilustracion img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Clip Path */
+.clip-path {
+    background-color: var(--color-principal);
+    width: 100vw;
+    height: 100vh;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* --- Estilos del Formulario --- */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-principal);
+    margin-bottom: 40px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-grupo {
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.boton-enviar {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.boton-enviar:hover {
+    background-color: #3a3ae0;
 }
