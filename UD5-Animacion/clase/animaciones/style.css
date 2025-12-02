@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cuadrado {
+    width: 400px;
+    height: 400px;
+    background-color: steelblue;
+    margin: 40px auto;
+    /* animation-name: animacion_spiderman;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 3;
+    animation-delay: 2s;
+    animation-direction: alternate; */
+    /* animation: animacion_spiderman 1s ease 2s infinite alternate; */
+    overflow: hidden;
+}
+
+.spiderman {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    animation: spiderman 2s ease 2s infinite;
+}
+
+@keyframes animacion_spiderman {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spiderman {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    25% {
+        transform: translateY(50px) rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: translate(-50px);
+    }
+}
