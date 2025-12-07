@@ -110,7 +110,7 @@ body {
     height: 100%;
     position: absolute;
     z-index: 1000;
-    overflow: hidden;
+
 }
 
 .bannerText h1 {
@@ -120,24 +120,40 @@ body {
     font-family: "Playfair Display";
 }
 
-.bannerText a {
+.bannerText div {
+    height: 50px;
     text-decoration: none;
     color: white;
-    display: block;
     padding: 10px 30px;
     background: linear-gradient(#12376e, #081830);
     border: 1px solid white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bannerText p:nth-of-type(2) {
     transition: all 1s ease-in;
-}
-
-.bannerText a:nth-of-type(2) {
-    transform: translateY(40vh);
+    transform: translateY(100px);
 
 }
 
+.bannerText p:nth-of-type(1) {
+    position: relative;
+    top: 10px;
+    left: 0;
+}
 
-.bannerText a:nth-of-type(1):hover+a {
-    transform: translateY(-40px);
+.bannerText p:nth-of-type(1):hover+p {
+    transition: all 0.5s ease-in;
+    transform: translateY(-10px);
+}
+
+.bannerText p:nth-of-type(1):hover {
+    transform: translateY(100px);
 }
 
 @keyframes animacion {

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clip-path {
+    width: 100%;
+    height: 100%;
+    background-color: #ec4c4c;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+
+.sect1 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+img {
+    position: absolute;
+    left: 25%;
+    top: 15vh;
+    height: 70vh;
+    width: 50%;
+    object-fit: cover;
+}
+
+.content {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 20px;
+}
+
+.content i {
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: navy;
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.content .info a {
+    position: relative;
+    display: block;
+    background-color: #ec4c4c;
+    color: white;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.content .info a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    clip-path: circle(0 at center);
+    transition: all 0.5s ease;
+}
+
+.content .info a:hover::before {
+    clip-path: circle(100% at center);
+}
+
+.content .info {
+    width: 80%;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.content .info h1 {
+    line-height: normal;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    clip-path: circle(0% at 100% 0%);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #52b788;
+    color: white;
+    transition: all 1s ease;
+
+}
+
+.menu i {
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: navy;
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.menu ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu:target {
+    clip-path: circle(150% at 100% 0%);
+}
