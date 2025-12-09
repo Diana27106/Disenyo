@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <section class="hero">
+            <div class="content">
+                <h1>Creamos el sitio web ideal para ti</h1>
+                <p>ANA FUENTES, tirando código en la web</p>
+            </div>
+            <img src="./assets/logo.jfif" alt="logo">
+        </section>
+        <section class="trabajos">
+            <a href="#modalTienda"><span> Para Ver más Pulsa</span></a>
+            <div class="modal" id="modalTienda">
+                <a href="#">X</a>
+                <img src="./assets/tienda.jfif" alt="tienda" id="imgTienda">
+            </div>
+            <h2>Conoce nuestro trabajo</h2>
+            <p>Echa un vistazo a nuestro trabajo</p>
+            <div class="gallery">
+                <div class="img1"> <img src="./assets/1.jfif" alt="img1"></div>
+                <div class="img2"><img src="./assets/2.jfif" alt="img2"></div>
+                <div class="img3"><img src="./assets/3.jfif" alt="img3"></div>
+                <div class="img4"><img src="./assets/4.jfif" alt="img4"></div>
+                <div class="img5"><img src="./assets/5.jfif" alt="img5"></div>
+                <div class="img6"><img src="./assets/6.jfif" alt="img6"></div>
+            </div>
+        </section>
+        <section class="precios">
+            <h2>Tabla de precios</h2>
+            <article class="catalogo">
+                <div class="card">
+                    <h3>Básico</h3>
+                    <p>10€ / por mes</p>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <p>Diseño exclusivo</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#">Comparar ahora</a>
+                </div>
+                <div class="card">
+                    <h3>Medio</h3>
+                    <p>20€ / por mes</p>
+                    <i class="fa-solid fa-mobile"></i>
+                    <p>Diseño responsivo</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#">Comparar ahora</a>
+                </div>
+                <div class="card">
+                    <h3>Avanzado</h3>
+                    <p>30€ / por mes</p>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <p>Diseño personalizado</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#">Comparar ahora</a>
+                </div>
+            </article>
+
+        </section>
+        <section class="contacto">
+            <div class="content">
+                <h2>Contacta con nosotros:</h2>
+                <form>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre cliente:">
+                    <input type="email" name="email" id="email" placeholder="Email cliente:">
+                    <textarea name="mensaje" id="mesaje" placeholder="Mensaje..."></textarea>
+                    <input type="submit" value="Eviar ahora">
+                </form>
+            </div>
+            <img src="./assets/tienda.jfif" alt="tienda">
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2023 Ana Mª Fuentes</p>
+    </footer>
+</body>
+
+</html>
