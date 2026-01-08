@@ -1,0 +1,28 @@
+/* VARIABLES CSS */
+:root {
+    --first-color: rgb(217, 0, 98);
+    --first-color-alpha: rgba(217, 0, 98, 0.75);
+    --second-color: rgb(20, 25, 45);
+    --second-color-alpha: rgba(20, 25, 45, 0.75);
+    --third-color: rgb(80, 20, 100);
+    --third-color-alpha: rgba(80, 20, 100, 0.75);
+
+    --link-color: rgb(80, 158, 227);
+    --link-color-alpha: rgba(80, 158, 227, 0.75);
+
+    --bg-color: rgb(245, 245, 245);
+    --bg-color-alpha: rgba(245, 245, 245, 0.75);
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar-brand img {
+    height: 3rem;
+    width: auto;
+}
+
+.bg-dark {
+    background-color: var(--second-color) !important;
+}
