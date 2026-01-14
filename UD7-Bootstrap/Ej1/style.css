@@ -1,0 +1,12 @@
+/* Ajusta el contenedor principal del carrusel */
+#carouselExampleCaptions {
+  max-height: 400px; /* Cambia este valor a la altura que desees */
+  overflow: hidden;
+}
+
+/* Ajusta los videos para que ocupen toda la altura definida */
+.carousel-item video {
+  height: 400px; /* Debe coincidir con el max-height anterior */
+  object-fit: cover; /* Evita que el video se vea estirado */
+  width: 100%;
+}
