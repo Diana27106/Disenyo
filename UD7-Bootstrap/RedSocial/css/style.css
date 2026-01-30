@@ -1,0 +1,111 @@
+:root {
+  --fondo-oscuro: rgb(24, 25, 26);
+  --fondo-oscuro-claro: rgb(39, 40, 41);
+  --letra-blanca: white;
+  --letra-oscura-clara: rgb(39, 40, 41);
+  --azul-seleccion: rgb(45, 136, 255);
+  --card: rgb(36, 37, 38);
+  --azul-icono: rgb(45, 136, 255);
+}
+
+.bg-dark-custom {
+  background-color: var(--fondo-oscuro-claro);
+}
+
+.bg-dark-custom2 {
+  background-color: var(--fondo-oscuro);
+  width: 180px;
+}
+
+.tamaño {
+  width: 200px !important;
+}
+
+.buscador {
+  background-color: rgb(58, 59, 60) !important;
+  height: 43px !important;
+}
+
+.buscador::placeholder {
+  color: var(--letra-blanca) !important;
+}
+
+.iconos {
+  color: var(--letra-blanca);
+}
+
+a:target,
+a:focus {
+  color: var(--azul-seleccion) !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.perfil {
+  width: 40px;
+}
+
+.nom-perfil {
+  margin-top: 30px;
+}
+
+.iconos {
+  margin-top: 17px;
+}
+
+.ico-derecha {
+  width: 50px;
+  height: 50px;
+}
+
+.buscador2::placeholder {
+  color: var(--letra-oscura-clara) !important;
+}
+
+.bg-cards {
+  background-color: var(--card);
+}
+
+.card-tamaño {
+  width: 38%;
+}
+
+.gap-5-custom {
+  gap: 90px; 
+}
+
+.bloq-derecha {
+  width: 20%;
+}
+
+.publi {
+  height: 150px;
+}
+
+.tamaño-letras {
+  font-size: 1.2rem; 
+}
+
+.fto {
+  width: 17%; 
+}
+
+.icon-target {
+  color: var(--azul-icono);
+  position: relative;
+}
+
+.icon-target::after {
+  content: "";
+  display: block;
+  width: 80px; 
+  height: 4px;
+  background-color: var(--azul-icono);
+  position: absolute;
+  bottom: -12px; /* Ajusta la distancia del borde respecto al icono */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
