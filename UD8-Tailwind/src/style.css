@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-dancing: "Dancing Script", cursive;
+  --font-weight-ligera: 12;
+  --color-coral: #f08080;
+}
+
+@layer components {
+  .card {
+    /* Corregido: center (sin s) y 4xl (con l) */
+    @apply bg-red-500 grid place-content-center rounded-lg text-white font-bold border-2 border-red-800 text-4xl;
+  }
+
+  .elemento {
+    @apply bg-red-500 grid place-content-center rounded-lg text-white font-bold border-2 border-red-900 text-2xl shadow h-50;
+  }
+}

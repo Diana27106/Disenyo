@@ -126,6 +126,18 @@ a:hover {
     background-color: var(--bg-color-alpha);
 }
 
+
+/* Estilos página clientes */
+
+.bg-second-alpha-color {
+    background-color: var(--second-color-alpha)
+}
+
+/* Estilo página contacots html*/
+.carousel-caption {
+    z-index: 1;
+}
+
 /* Media Queries */
 @media (min-width: 992px) {
     .nav-item:hover {

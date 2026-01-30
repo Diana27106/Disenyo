@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>PRJ-Tailwind-login-modal</title>
+</head>
+
+
+<body class="min-h-screen bg-pink-50 flex items-center justify-center p-4 font-sans">
+
+    <div class="bg-white rounded-3xl shadow-xl flex max-w-4xl w-full overflow-hidden relative">
+        
+        <div class="w-full md:w-1/2 p-10 lg:p-14">
+            <h1 class="text-3xl font-bold text-gray-800 mb-8">Log In</h1>
+            <p class="text-gray-500 text-sm mb-8">Log in to your account to upload or download pictures, videos or music.</p>
+
+            <form id="loginForm" class="space-y-4" novalidate>
+                <div>
+                    <input 
+                        id="emailInput"
+                        type="email" 
+                        placeholder="Enter your email address" 
+                        class="w-full p-4 border border-black rounded-xl focus:outline-none transition-colors"
+                    >
+                    <p id="errorText" class="text-red-500 text-xs mt-2 hidden">Incorrect email address</p>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <a href="#" class="text-cyan-700 text-sm font-semibold hover:underline">Forgot password</a>
+                    <button type="submit" class="bg-[#1a7589] text-white px-8 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-opacity-90 transition-all">
+                        Next <span>→</span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="relative my-8 text-center mt-10 mb-10">
+                <hr class="border-gray-200">
+                <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-4 text-gray-400 text-xs uppercase">or log in with</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <button class="flex items-center justify-center gap-2 border border-gray-200 py-3 rounded-xl font-semibold text-gray-700 transition duration-150 hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5">
+                    <img src="../asset/facebook.png" class="w-5 h-5" alt="fb"> Facebook
+                </button>
+                <button class="flex items-center justify-center gap-2 border border-gray-200 py-3 rounded-xl font-semibold text-gray-700 transition duration-150 hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5">
+                    <img src="../asset/google.png" class="w-5 h-5" alt="google"> Google
+                </button>
+            </div>
+        </div>
+
+        <div class="hidden md:block md:w-1/2 relative">
+            <img src="../asset/image.jpg" class="h-full w-full object-cover" alt="background">
+            <button class="absolute top-6 right-6 bg-white hover:bg-white/40 text-black rounded-full py-1 px-2">✕</button>
+        </div>
+    </div>
+
+    <script>
+        const emailInput = document.getElementById('emailInput');
+        const errorText = document.getElementById('errorText');
+        const form = document.getElementById('loginForm');
+
+        const validateEmail = (email) => {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        };
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const value = emailInput.value;
+
+            if (!validateEmail(value)) {
+                emailInput.classList.add('border-red-500', 'bg-red-50');
+                emailInput.classList.remove('border-black');
+                errorText.classList.remove('hidden');
+            } else {
+                emailInput.classList.remove('border-red-500', 'bg-red-50');
+                emailInput.classList.add('border-black');
+                errorText.classList.add('hidden');
+                alert('Email válido, enviando...');
+            }
+        });
+
+        emailInput.addEventListener('input', () => {
+            emailInput.classList.remove('border-red-500', 'bg-red-50');
+            emailInput.classList.add('border-black');
+            errorText.classList.add('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

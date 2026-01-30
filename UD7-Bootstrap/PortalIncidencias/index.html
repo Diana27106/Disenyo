@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Incidencias IT</title>
+
+
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Fuente Raleway desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-color">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand text-white" href="#">🤖 Incidencias TI</a>
+                <button type="button" class="btn btn-warning fw-bold">
+                    Pendientes <span class="badge text-black fw-bold">4</span>
+                </button>
+                <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    ➕ Nueva incidencia </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i> Menú / Filtros </button>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end show text-bg-dark" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkLabel">⚙️ Panel de soporte</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <p class="text-gray">Ir a la sección:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">📄Lista de incidencias</li>
+                    <li class="list-group-item">🖥️ Estado del sistema</li>
+                    <li class="list-group-item">❓ FAQ</li>
+                    <li class="list-group-item">🧪 Diágnostico</li>
+                </ul>
+                <hr>
+                <p>Filtros rápidos:</p>
+                <p>Tipo</p>
+                <form action="">
+                    <select class="form-control" name="filtro" id="filtro">
+                        <option class="form-control" value="Todos">Todos</option>
+                        <option class="form-control" value="Red / Wifi">Red / Wifi</option>
+                        <option class="form-control" value="Impresoras">Impresoras</option>
+                        <option class="form-control" value="Aulas / Proyectos">Aulas / Proyectos</option>
+                        <option class="form-control" value="Usuarios / Cuentas">Usuarios / Cuentas</option>
+                    </select>
+                </form>
+                <br>
+                <p>Prioridad</p>
+                <div class="btn-group m-2 w-100" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-outline-light">Todas</button>
+                    <button type="button" class="btn btn-outline-warning">Media</button>
+                    <button type="button" class="btn btn-danger">Alta</button>
+                </div>
+                <br>
+                <button type="button" class="w-100 m-2 btn btn-outline-info">Exportar informe</button>
+                <button type="button" class="w-100 m-2 btn btn-outline-success">Marcar todo como revisado</button>
+                <div class="text-yellow m-2 p-3 bg-yellow rounded-2">
+                    <b>Consejo</b>: adjunta pasos y capturas para poder cerrar incidencias rápido.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container bg-white m-auto mt-4 p-3 shadow">
+        <h1 class="fs-3">Portal de Incidencias TI</h1>
+        <p class="fs-6 text-gray">Caso real: incidencias típicas del instituto (Wifi, impresoras cuentas, aulas) con
+            componentes Bootstrap</p>
+    </section>
+
+    <section class="container mb-5">
+        <article class="row gap-4 justify-content-center align-items-start">
+            <div class="col-12 d-flex justify-content-between mt-4 mb-2">
+                <h2 class="fs-4">📄 Lista de incidencias</h2>
+                <small class="text-gray">Actualizado hoy</small>
+            </div>
+            <div class="col-12 col-lg-5 bg-white shadow rounded-2 p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2">WiFi cae en Aula 2.3</h5>
+                    <span class="badge rounded-pill text-bg-danger h-25">Alta</span>
+                </div>
+                <p class="text-gray fs-6">Los alumnos pierden conexión cada 10-15 min</p>
+                <div class="d-flex justify-content-between">
+                    <p class="text-gray fs-7">Progreso</p>
+                    <p class="text-gray fs-7">60%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="60"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-info" style="width: 60%"></div>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-outline-secondary m-2" data-bs-toggle="popover"
+                        data-bs-placement="top" data-bs-title="Checklist rápida(WiFi)"
+                        data-bs-content="Comprueba RSSI, canal, saturación 2.4GHz, firmware AP y si hay bucles en switch"
+                        data-bs-trigger="focus">
+                        <i class="bi bi-info-circle"></i> Sugerencia(popover)
+                    </button>
+                    <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse" data-bs-target="#wifi"
+                        aria-expanded="false" aria-controls="wifi">
+                        Ver detalles
+                    </button>
+                    <div class="collapse" id="wifi">
+                        <div class="card card-body bg-color m-2 mb-3">
+                            <p><b>Detalles:</b></p>
+                            <ul>
+                                <li>AP: AULA-2.3-AP01</li>
+                                <li>Hora pico: 10:30</li>
+                                <li>Observación: microcortees al cmabiar de canal</li>
+                            </ul>
+                            <small>Log: deauth reason=4</small>
+                            <small>DHCP renew ok</small>
+                            <small>RSSI fluctuante</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-5 bg-white shadow rounded-2 p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mt-2">Impresora 2º piso no imprime</h5>
+                    <span class="badge rounded-pill text-bg-warning h-25">Media</span>
+                </div>
+                <p class="text-gray fs-6">Cola atascada, "Error de contorlador".</p>
+                <div class="d-flex justify-content-between">
+                    <p class="text-gray fs-7">Progreso</p>
+                    <p class="text-gray fs-7">25%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar text-bg-warning" style="width: 25%">25%</div>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-outline-primary m-2" data-bs-toggle="popover"
+                        data-bs-placement="right" data-bs-title="Checklist rápida(WiFi)"
+                        data-bs-content="Comprueba RSSI, canal, saturación 2.4GHz, firmware AP y si hay bucles en switch"
+                        data-bs-trigger="focus">
+                        <i class="bi bi-info-circle"></i> Pista(popover)
+                    </button>
+                    <button class="btn btn-outline-success m-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#impresora" aria-expanded="false" aria-controls="impresora">
+                        Ver detalles
+                    </button>
+                    <div class="collapse" id="impresora">
+                        <div class="card card-body bg-green m-2 mb-3">
+                            <p class="text-success">Pasos: detener spooler -> borrar cola -> iniciar spooler ->
+                                impirimir test</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </section>
+    <section class="container mb-5">
+        <div class="row justify-content-center align-items-start">
+            <div class="col-12 gap-1 justify-content-center align-items-start mb-4 m-2">
+                <h2 class="fs-4">🖥️ Estado del sistema</h2>
+            </div>
+            <article class="col-12 col-lg-8 bg-white p-3 m-2 rounded-2 shadow">
+                <h3 class="fs-5">Monitorización en tiempo real</h3>
+                <div class="d-flex justify-content-start gap-4">
+                    <div class="text-center">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p>Sincronizando</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p>Servicios OK</p>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn btn-warning" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                            <span role="status">Cargando métricas...</span>
+                        </button>
+                        <p>Métricas</p>
+                    </div>
+                </div>
+                <hr>
+
+                <p>Carga del servidor (animada)</p>
+                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-success" style="width: 75%">75%</div>
+                </div>
+                <small class="text-gray fs-7">Simulación: picos en cambios de clase</small>
+
+            </article>
+            <article class="col-12 col-lg-3 bg-white shadow rounded-2 m-2 p-3">
+                <h3 class="fs-5">Diagnóstico rápido</h3>
+                <p>Panel lateral (collapse horizontal)</p>
+                <button class="btn btn-outline-secondary mb-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelLateral" aria-expanded="false" aria-controls="panelLateral">
+                    Abrir panel
+                </button>
+                <br>
+                <div class="panelLateral" id="panelLateral">
+                    <div class="card card-body">
+                        <p><b>Checklist:</b></p>
+                        <ul>
+                            <li>Ping gateway</li>
+                            <li>DNS OK</li>
+                            <li>DHCP leases</li>
+                            <li>Logs AP/Switch</li>
+                        </ul>
+                    </div>
+                </div>
+                <small class="text-gray fs-7">Útil para soporte de primera linea</small>
+            </article>
+        </div>
+
+    </section>
+
+    <section class="container">
+        <h2 class="fs-4">❓ Preguntas Frcuentes (FAQ)</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        No puedo entrar (usuario/contraseña)
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Verifica usuario, reset de contraseña y que no esté bloqueada la cuenta. Si persiste, abre
+                        ticket con captura.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        La WiFi va lenta en horas punta
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Puede haver saturación. Conecta a 5GHz si es posible y evita descargas masivas.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        La impresora imprime en blanco / cola bloqueada
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Cancela la cola, reinicia spooler y prueba imprsión. Si falla, reinstala driver o revisa
+                        combustibles.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 mb-5">
+        <h2 class="fs-4">🧪 Diagnóstico (Collapse)</h2>
+        <div class="bg-white rounded-2 shadow p-3">
+            <p class="text-gray">Simulación de documentación técnica para cerrar incidencias.</p>
+            <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse" data-bs-target="#log"
+                aria-expanded="false" aria-controls="log">
+                Ver log completo
+            </button>
+            <button class="btn btn-outline-primary m-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#planAccion" aria-expanded="false" aria-controls="planAccion">
+                Ver plan de acción
+            </button>
+            <div class="collapse m-2" id="log">
+                <div class="card card-body bg-color">
+                    <h6 class="fw-bold">Log (ejemplo)</h6>
+                    <p>AP=AULA-2.3-AP01</p>
+                    <p>Clients = 29</p>
+                    <p>Channel=6 (2.4GHz) - interference hight</p>
+                    <p>Event: deauth reason=4</p>
+                    <p>Action: optimize channnels + check firware</p>
+                </div>
+            </div>
+            <div class="collapse m-2" id="planAccion">
+                <div class="card card-body bg-blue text-info-emphasis">
+                    <ol>
+                        <li>Medir saturación 2.4/5GHz (Hora punta)</li>
+                        <li>Reconfigurar canales y potencia</li>
+                        <li>Actualizar firmware AP</li>
+                        <li>Verificar bucles en switch y STP</li>
+                        <li>Re-test y documentar cierre</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JS de Bootstrap -->
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(
+            popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)
+        )
+    </script>
+
+</body>
+
+</html>

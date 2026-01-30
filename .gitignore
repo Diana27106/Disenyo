@@ -3,3 +3,5 @@ UD2-Analisis/Prototipo
 *.pdf
 /UD2-Analisis/ProtHamb
 *.txt
+*/node_modules
+*/Practica*
