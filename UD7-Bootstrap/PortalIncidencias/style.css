@@ -1,27 +1,27 @@
 .text-gray {
-    color: #555;
+  color: #555;
 }
 
 .bg-color {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .fs-7 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .bg-green {
-    background-color: #F1FEF2;
+  background-color: #f1fef2;
 }
 
 .bg-blue {
-    background-color: lightcyan;
+  background-color: lightcyan;
 }
 
 .bg-yellow {
-    background-color: #f0dda1;
+  background-color: #f0dda1;
 }
 
 .text-yellow {
-    color: #62570c;
+  color: #62570c;
 }
