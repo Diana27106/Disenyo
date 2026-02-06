@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylo - Dark Mode</title>
+    <link rel="stylesheet" href="../output.css">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark:bg-blue-950 dark:text-white transition-colors duration-300">
+    <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20 relative">
+
+        <div
+            class="bg-logo-light-mode dark:bg-logo-dark-mode md:absolute top-10 left-10 mx-auto h-20 w-48 bg-no-repeat md:mx-0">
+        </div>
+
+        <div class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
+            <a href="#funcionalidades" class="hover:text-cyan-300">Funcionalidades</a>
+            <a href="#testimonios" class="hover:text-cyan-300">Testimonios</a>
+
+            <button id="theme-toggle"
+                class="text-gray-500 hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="moon-icon" class="w-5 h-5 hidden"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" id="sun-icon" fill="currentColor" class="w-5 h-5 hidden"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <section id="principal" class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom">
+        <div class="container mx-auto px-6 text-center md:pt-20 pb-50">
+            <img src="./images/illustration-intro.png" alt="Ilustración de introducción" class="mx-auto">
+            <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">Todos tus archivos
+                en un lugar seguro, accesible desde cualquier lugar.</h1>
+            <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">Fylo guarda todos tus archivos más
+                importantes en un solo lugar seguro. Accede a ellos cuando quieras y compártelos con amigos, familiares
+                y compañeros de trabajo.</p>
+            <button
+                class="p-3 rounded-full w-52 bg-cyan-300 text-blue-950 font-bold transform hover:scale-95 duration-200">Comenzar</button>
+        </div>
+    </section>
+
+    <section id="funcionalidades" class="pt-12 bg-gray-50 dark:bg-blue-950">
+        <div class="container mx-auto px-6 pb-32">
+            <div class="flex flex-col md:flex-row space-y-24 text-center md:space-y-0 md:mb-24">
+                <div class="flex flex-col items-center space-y-2 md:w-1/2">
+                    <div class="flex h-24 mb-6 items-center justify-center">
+                        <img src="./images/icon-access-anywhere.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold">Accede desde cualquier lugar</h3>
+                    <p class="max-w-md">La capacidad de usar un smartphone, tablet o computadora para acceder a tu
+                        cuenta significa que tus archivos te siguen a todas partes.</p>
+                </div>
+
+                <div class="flex flex-col items-center space-y-2 md:w-1/2">
+                    <div class="flex h-24 mb-6 items-center justify-center">
+                        <img src="./images/icon-security.svg" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold">Seguridad en la que puedes confiar</h3>
+                    <p class="max-w-md">La autenticación de dos factores y el cifrado de extremo a extremo son solo
+                        algunas de las características que utilizamos para proteger tus datos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productiva" class="bg-white dark:bg-blue-950">
+        <div class="container flex flex-col md:flex-row items-center mx-auto pt-24 pb-32 md:space-x-16 px-6">
+            <div class="md:w-1/2">
+                <img src="./images/illustration-stay-productive.png" alt="Mantente productivo" class="mb-10">
+            </div>
+
+            <div class="flex flex-col items-start md:w-1/2">
+                <div class="flex flex-col space-y-5">
+                    <h4 class="max-w-md text-xl font-bold md:text-4xl">Mantente productivo, estés donde estés</h4>
+                    <p>No dejes que la ubicación sea una limitación. Fylo te permite colaborar en tiempo real con
+                        equipos de todo el mundo.</p>
+                    <div class="block">
+                        <a href="#"
+                            class="border-b border-cyan-300 text-cyan-300 hover:text-white hover:border-white transition-colors">
+                            Descubre cómo funciona Fylo
+                            <img src="./images/icon-arrow.svg" alt="" class="inline pb-1 ml-1">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Alata', sans-serif;
+        }
+
+        h1,
+        h2,
+        .card-title {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/desktop/image-hero.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <header class="hero-bg h-[650px] text-white px-6 md:px-40 py-12">
+        <nav class="flex justify-between items-center mb-32">
+            <img src="img/logo.svg" alt="logo" class="w-48">
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#" class="hover:border-b-2 border-white pb-2 transition-all">About</a></li>
+                <li><a href="#" class="hover:border-b-2 border-white pb-2 transition-all">Careers</a></li>
+                <li><a href="#" class="hover:border-b-2 border-white pb-2 transition-all">Events</a></li>
+                <li><a href="#" class="hover:border-b-2 border-white pb-2 transition-all">Products</a></li>
+                <li><a href="#" class="hover:border-b-2 border-white pb-2 transition-all">Support</a></li>
+            </ul>
+        </nav>
+
+        <div class="border-2 border-white p-8 max-w-xl">
+            <h1 class="text-5xl md:text-7xl uppercase leading-tight">
+                Impressive Experiences That Deliver
+            </h1>
+        </div>
+    </header>
+
+    <section class="relative px-6 md:px-40 py-24 flex flex-col md:flex-row">
+        <div class="md:w-2/3">
+            <img src="img/desktop/image-interactive.jpg" alt="Interactive VR">
+        </div>
+        <div
+            class="bg-white md:absolute md:bottom-0 md:right-40 md:pl-20 md:pt-20 md:w-1/2 mt-12 md:mt-0 text-center md:text-left">
+            <h2 class="text-4xl md:text-5xl uppercase mb-6">The leader in interactive VR</h2>
+            <p class="text-gray-500 leading-relaxed">
+                Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the
+                best companies around the globe. Our award-winning creations have transformed businesses through digital
+                experiences that bind to their brand.
+            </p>
+        </div>
+    </section>
+
+    <section class="px-6 md:px-40 py-20">
+        <div class="flex justify-between items-center mb-12">
+            <h2 class="text-4xl uppercase">Our Creations</h2>
+            <button
+                class="hidden md:block border-2 border-black px-10 py-2 tracking-[0.3em] uppercase hover:bg-black hover:text-white transition-colors duration-300">See
+                All</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <div class="relative group cursor-pointer overflow-hidden bg-black">
+                <div
+                    class="absolute inset-0 z-10 bg-gradient-to-t from-black/70 to-transparent group-hover:bg-white/60 group-hover:from-transparent transition-all duration-300">
+                </div>
+
+                <img src="img/desktop/image-deep-earth.jpg"
+                    class="w-full transition-transform duration-500 group-hover:scale-110">
+
+                <h3
+                    class="card-title absolute bottom-8 left-8 z-20 text-white text-3xl uppercase w-20 group-hover:text-black transition-colors duration-300">
+                    Deep Earth
+                </h3>
+            </div>
+
+            <div class="relative group cursor-pointer overflow-hidden bg-black">
+                <div
+                    class="absolute inset-0 z-10 bg-gradient-to-t from-black/70 to-transparent group-hover:bg-white/60 group-hover:from-transparent transition-all duration-300">
+                </div>
+                <img src="img/desktop/image-night-arcade.jpg"
+                    class="w-full transition-transform duration-500 group-hover:scale-110">
+                <h3
+                    class="card-title absolute bottom-8 left-8 z-20 text-white text-3xl uppercase w-20 group-hover:text-black transition-colors duration-300">
+                    Night Arcade</h3>
+            </div>
+
+            <div class="relative group cursor-pointer overflow-hidden bg-black">
+                <div
+                    class="absolute inset-0 z-10 bg-gradient-to-t from-black/70 to-transparent group-hover:bg-white/60 group-hover:from-transparent transition-all duration-300">
+                </div>
+                <img src="img/desktop/image-soccer-team.jpg"
+                    class="w-full transition-transform duration-500 group-hover:scale-110">
+                <h3
+                    class="card-title absolute bottom-8 left-8 z-20 text-white text-3xl uppercase w-20 group-hover:text-black transition-colors duration-300">
+                    Soccer Team VR</h3>
+            </div>
+
+            <div class="relative group cursor-pointer overflow-hidden bg-black">
+                <div
+                    class="absolute inset-0 z-10 bg-gradient-to-t from-black/70 to-transparent group-hover:bg-white/60 group-hover:from-transparent transition-all duration-300">
+                </div>
+                <img src="img/desktop/image-grid.jpg"
+                    class="w-full transition-transform duration-500 group-hover:scale-110">
+                <h3
+                    class="card-title absolute bottom-8 left-8 z-20 text-white text-3xl uppercase w-20 group-hover:text-black transition-colors duration-300">
+                    The Grid</h3>
+            </div>
+
+            <div class="relative group cursor-pointer overflow-hidden bg-black">
+                <div
+                    class="absolute inset-0 z-10 bg-gradient-to-t from-black/70 to-transparent group-hover:bg-white/60 group-hover:from-transparent transition-all duration-300">
+                </div>
+                <img src="img/desktop/image-from-above.jpg"
+                    class="w-full transition-transform duration-500 group-hover:scale-110">
+                <h3
+                    class="card-title absolute bottom-8 left-8 z-20 text-white text-3xl uppercase w-32 group-hover:text-black transition-colors duration-300">
+                    From Up Above VR</h3>
+            </div>
+
+            <div class="relative group cursor-pointer overflow-hidden bg-black">
+                <div
+                    class="absolute inset-0 z-10 bg-gradient-to-t from-black/70 to-transparent group-hover:bg-white/60 group-hover:from-transparent transition-all duration-300">
+                </div>
+                <img src="img/desktop/image-pocket-borealis.jpg"
+                    class="w-full transition-transform duration-500 group-hover:scale-110">
+                <h3
+                    class="card-title absolute bottom-8 left-8 z-20 text-white text-3xl uppercase w-20 group-hover:text-black transition-colors duration-300">
+                    Pocket Borealis</h3>
+            </div>
+
+            <div class="relative group cursor-pointer overflow-hidden bg-black">
+                <div
+                    class="absolute inset-0 z-10 bg-gradient-to-t from-black/70 to-transparent group-hover:bg-white/60 group-hover:from-transparent transition-all duration-300">
+                </div>
+                <img src="img/desktop/image-curiosity.jpg"
+                    class="w-full transition-transform duration-500 group-hover:scale-110">
+                <h3
+                    class="card-title absolute bottom-8 left-8 z-20 text-white text-3xl uppercase w-20 group-hover:text-black transition-colors duration-300">
+                    The Curiosity</h3>
+            </div>
+
+            <div class="relative group cursor-pointer overflow-hidden bg-black">
+                <div
+                    class="absolute inset-0 z-10 bg-gradient-to-t from-black/70 to-transparent group-hover:bg-white/60 group-hover:from-transparent transition-all duration-300">
+                </div>
+                <img src="img/desktop/image-fisheye.jpg"
+                    class="w-full transition-transform duration-500 group-hover:scale-110">
+                <h3
+                    class="card-title absolute bottom-8 left-8 z-20 text-white text-3xl uppercase w-20 group-hover:text-black transition-colors duration-300">
+                    Make It Fisheye</h3>
+            </div>
+
+        </div>
+
+        <button
+            class="md:hidden mt-8 w-full border-2 border-black px-10 py-2 tracking-[0.3em] uppercase hover:bg-black hover:text-white transition-all duration-300">See
+            All</button>
+    </section>
+
+    <footer class="bg-black text-white px-6 md:px-40 py-14">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-6">
+
+            <div class="flex justify-center md:justify-start">
+                <img src="img/logo.svg" alt="loopstudios" class="w-36">
+            </div>
+
+            <div class="flex justify-center md:justify-end">
+                <div class="flex items-center space-x-4">
+                    <a href="#"><img src="img/icon-facebook.svg" alt="facebook" class="w-6 h-6 object-contain"></a>
+                    <a href="#"><img src="img/icon-twitter.svg" alt="twitter" class="w-6 h-6 object-contain"></a>
+                    <a href="#"><img src="img/icon-pinterest.svg" alt="pinterest" class="w-6 h-6 object-contain"></a>
+                    <a href="#"><img src="img/icon-instagram.svg" alt="instagram" class="w-6 h-6 object-contain"></a>
+                </div>
+            </div>
+
+            <div class="flex justify-center md:justify-start items-end">
+                <nav>
+                    <ul
+                        class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-center text-sm font-bold">
+                        <li><a href="#" class="hover:border-b-2 border-white pb-1 transition-all">About</a></li>
+                        <li><a href="#" class="hover:border-b-2 border-white pb-1 transition-all">Careers</a></li>
+                        <li><a href="#" class="hover:border-b-2 border-white pb-1 transition-all">Events</a></li>
+                        <li><a href="#" class="hover:border-b-2 border-white pb-1 transition-all">Products</a></li>
+                        <li><a href="#" class="hover:border-b-2 border-white pb-1 transition-all">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="flex justify-center md:justify-end items-end">
+                <p class="text-gray-500 text-sm font-bold">
+                    © 2026 Loopstudios. All Rights Reserved
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

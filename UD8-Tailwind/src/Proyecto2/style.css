@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .ficon:hover {
+        filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg) brightness(105%) contrast(104%);
+    }
+
+    .bg-logo-light-mode {
+        background-image: url(./images/logo-light-mode.svg);
+    }
+
+    .bg-curvy-light-mode {
+        background-image: url(./images/bg-curvy-light-mode.svg);
+    }
+
+    .bg-logo-dark-mode {
+        background-image: url(./images/logo-dark-mode.svg);
+    }
+
+    .bg-curvy-dark-mode {
+        background-image: url(./images/bg-curvy-dark-mode.svg);
+    }
+}
+
+@theme {
+    /* Colores personalizados */
+    --color-cyan: hsl(176, 68%, 64%);
+    --color-dark-blue: hsl(217, 28%, 15%);
+    --color-dark-blue-1: hsl(216, 53%, 9%);
+    --color-dark-blue-2: hsl(218, 28%, 13%);
+    --color-dark-blue-3: hsl(219, 30%, 18%);
+}
