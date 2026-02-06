@@ -4,132 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../output.css">
-    <title>PR3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Testimonials Grid</title>
+    <style>
+        /* Agregamos la comilla decorativa del primer card */
+        .bg-quotes {
+            background-image: url('https://raw.githubusercontent.com/pikamachu/testimonials-grid-section/master/images/bg-pattern-quotation.svg');
+            background-repeat: no-repeat;
+            background-position: top 0 right 10%;
+            background-size: 120px;
+        }
+    </style>
 </head>
 
-<body>
-    <section class="grid grid-cols-4 grid-rows-2 gap-5">
-        <div class="bg-purple-600 col-span-2 p-5 rounded-xl">
-            <div>
-                <div class="flex justify-start items-center mb-5">
-                    <div class="w-10 h-10 rounded-full border-2 mr-3 border-white overflow-hidden">
-                        <img src="./assets/image-daniel.jpg" alt="Daniel" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <h4 class="text-xl text-white">Daniel Clifford</h4>
-                        <p class="text-sm text-gray-200">Varified Graduate</p>
-                    </div>
-                </div>
+<body class="bg-blue-50 flex items-center justify-center min-h-screen p-10">
 
-                <h3 class="text-white text-xl font-bold mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quas
-                    adipisci pariatur tempora laboriosam, vel provident officia eaque autem dicta labore!</h3>
-                <p class="text-gray-200 text-sm font-light mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
-                    Quia
-                    tenetur, magni itaque sapiente ratione fugiat aliquam praesentium esse nam illo debitis odit at
-                    ducimus
-                    voluptatem libero tempora minima perspiciatis officiis provident? Aliquid doloribus autem mollitia.
-                </p>
-            </div>
-        </div>
-        <div class="bg-gray-600 p-5 rounded-xl">
-            <div>
-                <div class="flex justify-start items-center mb-5">
-                    <div class="w-10 h-10 rounded-full border-2 mr-3 border-white overflow-hidden">
-                        <img src="./assets/image-jonathan.jpg" alt="Daniel" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <h4 class="text-xl text-white">Jonathan Walters</h4>
-                        <p class="text-sm text-gray-200">Varified Graduate</p>
-                    </div>
-                </div>
+    <section class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-7xl">
 
-                <h3 class="text-white text-xl font-bold mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h3>
-                <p class="text-gray-200 text-sm font-light mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
-                    Quia
-                    tenetur.
-                </p>
-            </div>
-        </div>
-        <div class="bg-white row-span-2 p-5 rounded-xl">
-            <div>
-                <div class="flex justify-start items-center mb-5">
-                    <div class="w-10 h-10 rounded-full border-2 mr-3 border-white overflow-hidden">
-                        <img src="./assets/image-kira.jpg" alt="Kira" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <h4 class="text-xl text-white">Kira Whittle</h4>
-                        <p class="text-sm text-gray-900">Varified Graduate</p>
-                    </div>
+        <div class="bg-[#733FC8] md:col-span-2 p-8 rounded-xl shadow-lg bg-quotes text-white relative">
+            <div class="flex items-center mb-4">
+                <img src="./assets/image-daniel.jpg" class="w-8 h-8 rounded-full border-2 border-purple-400 mr-4"
+                    alt="Daniel">
+                <div>
+                    <p class="text-sm font-semibold leading-none">Daniel Clifford</p>
+                    <p class="text-xs opacity-50">Verified Graduate</p>
                 </div>
-
-                <h3 class="text-black text-xl font-bold mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit!
-                </h3>
-                <p class="text-gray-900 text-sm font-light mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Perspiciatis natus voluptate earum repellendus recusandae quasi eius rem sequi qui provident,
-                    ad cumque, soluta impedit! Excepturi repudiandae dolorem ipsum blanditiis ratione nobis laborum
-                    quisquam odio, voluptatibus necessitatibus nemo expedita aliquam, fuga error tempora ipsa optio,
-                    vero labore quidem tenetur. Perferendis natus exercitationem ea corporis commodi officiis beatae
-                    voluptatem placeat obcaecati eum vitae similique, officia id corrupti sunt deleniti dignissimos
-                    consequatur qui aperiam temporibus magnam ullam. Maiores deleniti doloribus iusto officia suscipit.
-                    Corporis dolorum sint unde modi rerum ea rem similique ad? Dignissimos possimus error harum
-                    quibusdam corporis fuga quam reiciendis ratione?
-                </p>
             </div>
+            <h3 class="text-xl font-bold mb-4 relative z-10">I received a job offer mid-course, and the subjects I
+                learned were current, if not more so, in the company I joined. I honestly feel I got every penny's
+                worth.</h3>
+            <p class="text-[13px] opacity-70 leading-relaxed">"I was an EMT for many years before I joined the bootcamp.
+                I've been looking to make a transition and have heard some people who had an amazing experience here. I
+                signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next
+                12 weeks was the best - and most grueling - time of my life. Since completing the course, I've
+                successfully switched careers, working as a Software Engineer at a VR startup."</p>
         </div>
-        <div class="bg-white p-5 rounded-xl">
-            <div>
-                <div class="flex justify-start items-center mb-5">
-                    <div class="w-10 h-10 rounded-full border-2 mr-3 border-black overflow-hidden">
-                        <img src="./assets/image-daniel.jpg" alt="Daniel" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <h4 class="text-xl text-black">Daniel Clifford</h4>
-                        <p class="text-sm text-gray-500">Varified Graduate</p>
-                    </div>
+
+        <div class="bg-[#48556A] p-8 rounded-xl shadow-lg text-white">
+            <div class="flex items-center mb-4">
+                <img src="./assets/image-jonathan.jpg" class="w-8 h-8 rounded-full mr-4" alt="Jonathan">
+                <div>
+                    <p class="text-sm font-semibold leading-none">Jonathan Walters</p>
+                    <p class="text-xs opacity-50">Verified Graduate</p>
                 </div>
-
-                <h3 class="text-black text-xl font-bold mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quas
-                    adipisci pariatur tempora laboriosam, vel provident officia eaque autem dicta labore!</h3>
-                <p class="text-gray-500 text-sm font-light mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
-                    Quia
-                    tenetur, magni itaque sapiente ratione fugiat aliquam praesentium esse nam illo debitis odit at
-                    ducimus
-                    voluptatem libero tempora minima perspiciatis officiis provident? Aliquid doloribus autem mollitia.
-                </p>
             </div>
+            <h3 class="text-xl font-bold mb-4">The team was very supportive and kept me motivated</h3>
+            <p class="text-[13px] opacity-70 leading-relaxed">"I started as a total newbie with virtually no coding
+                skills. I now work as a mobile engineer for a big company. This was one of the best investments I've
+                made..."</p>
         </div>
-        <div class="bg-gray-900 col-span-2 p-5 rounded-xl">
-            <div>
-                <div class="flex justify-start items-center mb-5">
-                    <div class="w-10 h-10 rounded-full border-2 mr-3 border-white overflow-hidden">
-                        <img src="./assets/image-daniel.jpg" alt="Daniel" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <h4 class="text-xl text-white">Daniel Clifford</h4>
-                        <p class="text-sm text-gray-200">Varified Graduate</p>
-                    </div>
+
+        <div class="bg-white md:row-span-2 md:col-start-4 p-8 rounded-xl shadow-lg text-gray-600">
+            <div class="flex items-center mb-4">
+                <img src="./assets/image-kira.jpg" class="w-8 h-8 rounded-full mr-4" alt="Kira">
+                <div>
+                    <p class="text-sm font-bold leading-none text-gray-800">Kira Whittle</p>
+                    <p class="text-xs opacity-50">Verified Graduate</p>
                 </div>
-
-                <h3 class="text-white text-xl font-bold mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quas
-                    adipisci pariatur tempora laboriosam, vel provident officia eaque autem dicta labore!</h3>
-                <p class="text-gray-200 text-sm font-light mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
-                    Quia
-                    tenetur, magni itaque sapiente ratione fugiat aliquam praesentium esse nam illo debitis odit at
-                    ducimus
-                    voluptatem libero tempora minima perspiciatis officiis provident? Aliquid doloribus autem mollitia.
-                </p>
             </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Such a life-changing experience. Highly recommended!</h3>
+            <p class="text-[13px] opacity-70 leading-relaxed">"Before joining the bootcamp, I've never written a line of
+                code. I needed some structure from professionals who can help me learn programming step by step. I was
+                encouraged to enroll by a former student of theirs who can only say wonderful things about the program.
+                The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long
+                for assistance. The agile team project, in particular, was outstanding. It took my learning to the next
+                level in a way that no tutorial could ever have. In fact, I've often referred to it during interviews as
+                an example of my development experience. It certainly helped me land a job as a full-stack developer
+                after receiving multiple offers. 100% recommend!"</p>
         </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg text-gray-600">
+            <div class="flex items-center mb-4">
+                <img src="./assets/image-jeanette.jpg" class="w-8 h-8 rounded-full mr-4" alt="Jeanette">
+                <div>
+                    <p class="text-sm font-bold leading-none text-gray-800">Jeanette Harmon</p>
+                    <p class="text-xs opacity-50">Verified Graduate</p>
+                </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-gray-800">An overall wonderful and rewarding experience</h3>
+            <p class="text-[13px] opacity-70 leading-relaxed">"Thank you for the wonderful experience! I now have a job
+                I really enjoy, and make a good living while doing something I love."</p>
+        </div>
+
+        <div class="bg-[#19212E] md:col-span-2 p-8 rounded-xl shadow-lg text-white">
+            <div class="flex items-center mb-4">
+                <img src="./assets/image-patrick.jpg" class="w-8 h-8 rounded-full border-2 border-purple-600 mr-4"
+                    alt="Patrick">
+                <div>
+                    <p class="text-sm font-semibold leading-none">Patrick Abrams</p>
+                    <p class="text-xs opacity-50">Verified Graduate</p>
+                </div>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Awesome teaching support from TAs who did the bootcamp themselves.
+                Getting guidance from them and learning from their experiences was easy.</h3>
+            <p class="text-[13px] opacity-70 leading-relaxed">"The staff seem genuinely concerned about my progress
+                which I find really refreshing. The program gave me the confidence necessary to be able to go out in the
+                world and present myself as a capable junior developer. The standard is above the rest. You will get the
+                personal attention you need from an incredible community of smart and amazing people."</p>
+        </div>
+
     </section>
+
 </body>
 
 </html>
